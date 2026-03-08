@@ -150,3 +150,19 @@
 .auth-label { cursor: pointer; }
 .auth-input { cursor: text; }
 .auth-button { cursor: pointer; }
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to login card */
+.auth-card {
+    animation: slideInFromLeft 1s ease-out;
+}

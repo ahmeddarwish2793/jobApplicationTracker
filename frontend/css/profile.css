@@ -85,3 +85,19 @@ body{
 .reset-btn:hover{
     background:#f9fafb;
 }
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to login card */
+.page-wrapper {
+    animation: slideInFromLeft 1s ease-out;
+}
